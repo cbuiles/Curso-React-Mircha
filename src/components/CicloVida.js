@@ -6,7 +6,7 @@ class Reloj extends Component {
   }
 
   componentWillUnmount() {
-    console.log(3, "El componente ha sido eliminado del DOM");
+    // console.log(3, "El componente ha sido eliminado del DOM");
   }
 
   render() {
@@ -17,7 +17,7 @@ class Reloj extends Component {
 export default class CicloVida extends Component {
   constructor(props) {
     super(props);
-    console.log(0, "El componente se inicializa, aun NO esta en el DOM");
+    // console.log(0, "El componente se inicializa, aun NO esta en el DOM");
 
     this.state = {
       hora: new Date().toLocaleTimeString(),
@@ -29,14 +29,14 @@ export default class CicloVida extends Component {
 
   componentDidMount() {
     // Cuando se realizan peticios ajax se recomienda hacerlo en este ciclo de vida, ya que es con el que podemos interactuar en el DOM, significa que este componente ya esta cargado en el DOM
-    console.log(1, "El componente ya se encuentra en el DOM");
+    // console.log(1, "El componente ya se encuentra en el DOM");
   }
 
   componentDidUpdate(prevProps, prevState) {
     // Me permite pasar las propiedades previas y el estado previo por si necesito trabjar con ellas en el nuevo estado
-    console.log(2, "El estado o las props del componente han cambiado");
-    console.log(prevProps);
-    console.log(prevState);
+    // console.log(2, "El estado o las props del componente han cambiado");
+    // console.log(prevProps);
+    // console.log(prevState);
   }
 
   tictac = () => {
