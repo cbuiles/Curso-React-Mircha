@@ -113,7 +113,7 @@ export class MasSobreEventos extends Component {
           Saludar
         </button>
         {/* Evento personalizado */}
-        {/* Error comun en los componentes personalizados
+        {/* Error comun en los componentes personalizados primero hay que pasar el evento como una propiedad
         <Boton
           onClick={(e) =>
             this.handleClick(e, "Hola pasando parametro desde un evento")
