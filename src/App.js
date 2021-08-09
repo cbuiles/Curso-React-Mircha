@@ -13,6 +13,7 @@ import ContadorHooks from "./components/ContadorHooks";
 import ScrollHooks from "./components/ScrollHooks";
 import RelojHooks from "./components/RelojHooks";
 import "./App.css";
+import AjaxHooks from "./components/AjaxHooks";
 
 function App() {
   let nombre = "Camilo";
@@ -83,6 +84,8 @@ function App() {
           <ScrollHooks />
           <hr />
           <RelojHooks />
+          <hr />
+          <AjaxHooks />
         </section>
       </header>
     </div>
