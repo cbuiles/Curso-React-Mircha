@@ -8,7 +8,7 @@ export default function Referencias() {
   let refMenu = useRef(),
     refMenuBtn = useRef();
 
-  console.log(refMenu, refMenu);
+  // console.log(refMenu, refMenu);
 
   const handleToggleMenu = (e) => {
     if (refMenuBtn.current.textContent === "Menú") {
@@ -28,15 +28,15 @@ export default function Referencias() {
       </button>
       {/* comando emmet a*5{Sección $} + br */}
       <nav id="menu" ref={refMenu} style={{ display: "none" }}>
-        <a href="#">Sección 1</a>
+        <a href="google.com">Sección 1</a>
         <br />
-        <a href="#">Sección 2</a>
+        <a href="google.com">Sección 2</a>
         <br />
-        <a href="#">Sección 3</a>
+        <a href="google.com">Sección 3</a>
         <br />
-        <a href="#">Sección 4</a>
+        <a href="google.com">Sección 4</a>
         <br />
-        <a href="#">Sección 5</a>
+        <a href="google.com">Sección 5</a>
       </nav>
     </>
   );
